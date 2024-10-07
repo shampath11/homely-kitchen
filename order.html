@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Homely Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Place Your Order</h2>
+        <form action="/homely-kitchen/order.html" method="POST">
+            <label for="meal">Choose Your Meal:</label>
+            <select id="meal" name="meal" required>
+                <option value="lasagna">Lasagna</option>
+                <option value="pasta">Pasta</option>
+                <option value="salad">Salad</option>
+                <option value="burger">Burger</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
